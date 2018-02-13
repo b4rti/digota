@@ -17,9 +17,10 @@
 package internalTestOnly
 
 import (
-	"github.com/digota/digota/payment/paymentpb"
 	"reflect"
 	"testing"
+
+	"github.com/b4rti/digota/payment/paymentpb"
 )
 
 func TestNewProvider(t *testing.T) {

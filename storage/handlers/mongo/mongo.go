@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/digota/digota/config"
-	"github.com/digota/digota/storage/object"
+	"github.com/b4rti/digota/config"
+	"github.com/b4rti/digota/storage/object"
 	"github.com/satori/go.uuid"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc/codes"

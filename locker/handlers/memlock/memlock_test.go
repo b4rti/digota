@@ -17,9 +17,10 @@
 package memlock
 
 import (
-	"github.com/satori/go.uuid"
 	"testing"
 	"time"
+
+	"github.com/satori/go.uuid"
 )
 
 type testObj struct {

@@ -20,7 +20,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/digota/digota/payment/paymentpb"
+	"github.com/b4rti/digota/payment/paymentpb"
 	"github.com/satori/go.uuid"
 )
 

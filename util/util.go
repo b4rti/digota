@@ -18,9 +18,10 @@ package util
 
 import (
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"math/big"
 	"time"
+
+	log "github.com/sirupsen/logrus"
 )
 
 const (

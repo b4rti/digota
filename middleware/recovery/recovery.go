@@ -17,10 +17,11 @@
 package recovery
 
 import (
+	"runtime/debug"
+
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"runtime/debug"
 )
 
 // RecoveryHandlerFunc outputs the stack and the error

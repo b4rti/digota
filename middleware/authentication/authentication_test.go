@@ -18,6 +18,8 @@ package authentication
 
 import (
 	"crypto/tls"
+	"testing"
+
 	"github.com/grpc-ecosystem/go-grpc-middleware/testing"
 	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
 	"github.com/stretchr/testify/require"
@@ -25,7 +27,6 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
-	"testing"
 )
 
 var (
