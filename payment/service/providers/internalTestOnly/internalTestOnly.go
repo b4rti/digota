@@ -48,9 +48,14 @@ func (p *provider) Charge(req *paymentpb.ChargeRequest) (*paymentpb.Charge, erro
 		return nil, errors.New("expected charge error")
 	}
 
+	u, err := uuid.NewV4()
+	if err != nil {
+		return nil, err
+	}
+
 	return &paymentpb.Charge{
 		ProviderId:       p.ProviderId(),
-		ProviderChargeId: uuid.NewV4().String(),
+		ProviderChargeId: u.String(),
 		Paid:             true,
 		Email:            req.GetEmail(),
 		Currency:         req.GetCurrency(),
